@@ -1,0 +1,6 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  /* Aplica la fuente Roboto a todo el cuerpo del documento */
+  box-sizing: border-box;
+}

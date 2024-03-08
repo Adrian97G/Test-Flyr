@@ -1,0 +1,126 @@
+// Navbar Desktop and movil 
+.navbar {
+  width: 92%;
+  margin: 5px auto; 
+  background-color: #ffffff;
+  color: #000000; 
+
+  .container {
+    max-width: 92%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburguer-menu {
+    display: none; 
+  }
+
+  // Show hamburger menu and hide links on mobile
+  @media (max-width: 767px) {
+    .hamburguer-menu {
+      display: flex;
+      justify-content: flex-start; 
+
+      &:hover {
+        transform: scale(1.05); 
+      }
+    }
+   
+    .navbar-links.show {
+      display: flex;
+    }
+
+    .navbar-links {
+      display: none; 
+    }
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin-right: 2rem;
+    }
+
+    .navbar-links {
+      display: flex;
+
+      .nav-link {
+        color: #000000;
+        padding-left: 2rem;
+        text-decoration: none;
+        font-size: 1rem;
+
+        &:hover {
+          text-decoration: none;
+          transform: scale(1.03); 
+          font-weight: 600; 
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .navbar-links {
+        display: none; 
+      }
+    }
+    .logo {
+      margin-right: auto; 
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .nav-link {
+      color: #000000;
+      padding-left: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.03); 
+        font-weight: 600; /* Increase text size slightly on hover */
+      }
+    }
+  
+    @media (max-width: 767px) {
+      .nav-link {
+        display: none;
+      }
+    }
+  
+    .icon-lang {
+      width: 20px;
+      color: #181823;
+      margin: 2px;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.03); 
+        font-weight: 600; 
+      }
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        flex-direction: column; 
+        align-items: center; 
+      }
+      .navbar-right {
+        display: none; 
+      }
+    }
+  }
+}

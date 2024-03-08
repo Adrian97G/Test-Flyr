@@ -1,0 +1,123 @@
+.navbar {
+  width: 92%;
+  margin: 5px auto;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar .container {
+  max-width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .hamburguer-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar .hamburguer-menu {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar .hamburguer-menu:hover {
+    transform: scale(1.05);
+  }
+  .navbar .navbar-links.show {
+    display: flex;
+  }
+  .navbar .navbar-links {
+    display: none;
+  }
+}
+
+.navbar .logo {
+  margin-right: auto;
+}
+
+.navbar .navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-left h1 {
+  margin-right: 2rem;
+}
+
+.navbar .navbar-left .navbar-links {
+  display: flex;
+}
+
+.navbar .navbar-left .navbar-links .nav-link {
+  color: #000000;
+  padding-left: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar .navbar-left .navbar-links .nav-link:hover {
+  text-decoration: none;
+  transform: scale(1.03);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-left .navbar-links {
+    display: none;
+  }
+}
+
+.navbar .navbar-left .logo {
+  margin-right: auto;
+}
+
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navbar-right .nav-link {
+  color: #000000;
+  padding-left: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar .navbar-right .nav-link:hover {
+  text-decoration: none;
+  transform: scale(1.03);
+  font-weight: 600;
+  /* Increase text size slightly on hover */
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-right .nav-link {
+    display: none;
+  }
+}
+
+.navbar .navbar-right .icon-lang {
+  width: 20px;
+  color: #181823;
+  margin: 2px;
+  text-decoration: none;
+}
+
+.navbar .navbar-right .icon-lang:hover {
+  text-decoration: none;
+  transform: scale(1.03);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-right .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .navbar-right .navbar-right {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+/* Main Section */
+.main-container {
+    width: 100%;
+    height: 60vh; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0; 
+}
+
+.main-content .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50px; 
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    padding: 0 20px; 
+}
+
+.main-content .overlay h1 {
+    font-size: 3rem;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.main-content .overlay p {
+    font-size: 1rem;
+    padding-top: 2px;
+    margin: 0;
+    max-width: 80%;
+}
+
+.main-content .overlay .button-content {
+    margin-top: 30px;
+}
+
+.main-content .overlay button {
+    background-color: #ff0019d7;
+    color: white;
+    padding: 6px 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main-content .overlay button:hover {
+    background-color: #c20114;
+}

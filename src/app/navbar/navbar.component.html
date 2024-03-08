@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="container">
+      <div class="hamburguer-menu" (click)="toggleMenu()">
+        <span class="material-symbols-rounded">
+          Menu
+        </span>
+      </div>  
+      <div class="navbar-left">
+        <div class="logo">
+            <img src="assets/img/logo.svg" loading="lazy" alt="Logo">
+        </div>        
+        <div class="navbar-links" [ngClass]="{'show': isMenuOpen}">
+          <a href="#" class="nav-link">Check-in</a>
+          <a href="#" class="nav-link">Manage my booking</a>
+          <a href="#" class="nav-link">Information</a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <span class="material-symbols-rounded icon-lang">
+          language
+          </span>
+        <a href="#" class="nav-link">English</a>
+      </div>
+    </div>
+</nav>
+  
